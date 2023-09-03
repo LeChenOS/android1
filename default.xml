@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+ 
   <remote  name="github"
-           fetch=".."
+           fetch="https://ghproxy.com/https://github.com" />
+
+  <remote  name="lineage"
+           fetch="https://ghproxy.com/https://github.com"
            review="review.lineageos.org" />
 
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
   <remote  name="aosp"
-           fetch="https://android.googlesource.com"
+           fetch="git://mirrors.ustc.edu.cn/aosp"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-13.0.0_r67" />
+           revision="refs/tags/android-13.0.0_r73" />
 
   <default revision="refs/heads/lineage-20.0"
            remote="github"
